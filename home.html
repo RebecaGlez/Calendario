@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet"type="text/css"  href="vendors/fonts/stylesheet.css" charset="utf-8" /> 
+        <title> calendario </title>
+        <link  rel="stylesheet" href="vendors/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendors/css/bootstrap-theme.min.css">
+       
+        <link rel="stylesheet" href="vendors/js/jquery-ui-datepicker.min.js">
+        
+        
+        
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        
+        </head>
+        
+    <body>   
+        <header>
+            <nav class="navbar navbar-default" style="margin-bottom:0px; width:100%; position:fixed;  z-index:14" >
+                <div class="container-fluid ">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+       
+        
+        
+        <div class="aside-main">  
+                   <div class="containercalen">
+                      <span id="day">Wednesday</span>
+                          <div class="daycontainer">
+                            <span id="number">12</span>
+                          </div>
+                          <div class="thing1"></div>
+                          <div class="thing2"></div>
+                          <div class="hole1"></div>
+                          <div class="hole2"></div>
+                    </div> 
+                 <div id="calendar"></div>
+                 <div id="botones">
+                     <button type="button" class="btnDia">Dia</button>
+                     <button type="button" class="btnsemana">Semana</button>
+                     <button type="button" class="btnmes">Mes</button>
+                 </div>
+                 <div id="personal">
+                     <h3 style="margin-left:25px;">Otros Calendarios</h3>
+                     <ul>
+                         <li id="Adan"><a>Adan</a></li>
+                         <li id="Karina"><a>Karina</a></li>
+                         <li id="John"><a>John</a></li>
+                     </ul>
+                 </div>
+        </div>
+      
+        <section>
+            <div class="rectup">Semanal</div>
+            <div class="rectdw"> </div>
+            <div class="rectdias" >
+                <table class="Mesdias">
+                    <thead id="encabezado">
+                        <tr>
+                            <th class="nomDia">L <a class="dia">22</a></th>
+                            <th class="nomDia">M <a class="dia">23</a></th>
+                            <th class="nomDia">M <a class="dia">24</a></th>
+                            <th class="nomDia">J <a class="dia">25</a></th>
+                            <th class="nomDia">V <a class="dia">26</a></th>
+                            <th class="nomDia">S <a class="dia">27</a></th>
+                            <th class="nomDia">D <a class="dia">28</a></th>
+                        </tr>
+                    </thead>
+                </table> 
+            </div>
+
+                <div>
+                    <table class="horasCalen">
+                        <tr class="trhorasclass">
+                            <td> 10:30 am</br> 11:00 am</td>  
+                        </tr>
+                         <tr class="trhorasclass">
+                            <td>11:30 am</br> 12:00 am</td>  
+                        </tr>
+                        <tr class="trhorasclass">
+                            <td>12:30 am</br> 1:00 am</td>  
+                        </tr>
+                        <tr class="trhorasclass">
+                            <td>1:30 am</br> 2:00 am</td>  
+                        </tr>
+                        <tr class="trhorasclass">
+                            <td>2:30 am</br> 3:00 am</td>  
+                        </tr>
+                    </table>              
+                </div>
+                 <div class="citasCalen">
+                    <table >
+                        <tr>
+                             <td class="tdcitas" >1 &nbsp; </td>
+                            
+                            
+                            
+                             <td class="tdcitas2 myPopover" data-toggle="popover" data-title="Nueva cita" data-content='
+                                <form id="mainForm" name="mainForm" method="post" action="">
+                                  <input type="text" placeholder="Nombre del Cliente" class="form-control">
+                                                                                                                        </br>
+                                        <p>Abogado :</p>   
+                                            <select class="form-control">
+                                                <option>Adan</option>
+                                                <option>Aldo</option>
+                                                <option>John</option>
+                                                <option>Lorena</option>
+                                            </select> 
+                                                                                                                        </br>
+                                  <input type="text" placeholder="Horario" class="form-control">
+                                                                                                                        </br>
+                                  <textarea class="form-control" placeholder="Comentario" rows="5" id="comment"></textarea>
+                                </form>'>2&nbsp; 
+                            </td>
+                             <td class="tdcitas2">3 &nbsp; </td>
+                             <td class="tdcitas2">4 &nbsp; </td>
+                             <td class="tdcitas2">5 &nbsp; </td>
+                             <td class="tdcitas2">6 &nbsp; </td>
+                             <td class="tdcitas2">7 &nbsp; </td>
+                        </tr>
+                        <tr >
+                            <td class="tdcitas">
+                             <table>
+                                <tr class="childtdcitas">
+                                     <td id="idabogado" >Julia Jaramillo Jardon </br> @tipo de caso  @Abogado </td>
+                                </tr>
+                                <tr class="childtdcitas">
+                                     <td id="idabogado2">Julia Jaramillo Jardon  </td>
+                                </tr>
+                                <tr class="childtdcitas">
+                                     <td id="idabogado3">Julia Jaramillo Jardon </td>
+                                </tr>
+                                <tr class="childtdcitas">
+                                     <td id="idabogado4">Julia Jaramillo Jardon  </td>
+                                </tr>
+                                 <tr class="childtdcitas">
+                                     <td id="idabogado5">Julia Jaramillo Jardon  </td>
+                                </tr>
+                                 <tr class="childtdcitas">
+                                     <td id="idabogado6">Julia Jaramillo Jardon  </td>
+                                </tr>
+                                 <tr class="childtdcitas">
+                                     <td id="idabogado7">Julia Jaramillo Jardon  </td>
+                                </tr>
+                                 <tr class="childtdcitas">
+                                     <td id="idabogado8">Julia Jaramillo Jardon  </td>
+                                </tr>
+                                <tr class="childtdcitas">
+                                     <td id="idabogado9">Julia Jaramillo Jardon  </td>
+                                </tr>
+                             </table>
+                            </td>
+                             <td class="tdcitas2">
+                                 <table>
+                                <tr class="childtdcitas">
+                                     <td id="idabogado" >Julia Jaramillo Jardon </br> @tipo de caso  @Abogado </td>
+                                </tr>
+                                <tr class="childtdcitas" >
+                                     <td id="idabogado2">Julia Jaramillo Jardon </br> @tipo de caso  @Abogado   </td>
+
+                                </tr>
+                                <tr class="childtdcitas" >
+                                    <td > aqui</td>
+                                </tr>
+                             </table>
+                             </td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                        </tr>
+                        <tr >
+                            <td class="tdcitas"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                        </tr>
+                        <tr >
+                            <td class="tdcitas"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                             <td class="tdcitas2"></td>
+                        </tr>
+                    </table>              
+                </div>
+        </section>
+        
+        
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jquery local version developer --><script src="vendors/js/jquery-1.12.0.js"></script>
+<!-- jquery local version normal--><script src="vendors/js/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap v3.3.6 --> <script src="vendors/js/bootstrap.min.js"></script>
+<!-- jquery-ui v1.11.4 --><script src="vendors/js/jquery-ui.min.js"></script>
+
+<!-- jquery version 1.7 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--datepicker version  jQuery UI 1.8.18 <script src="vendors/js/jquery-ui-datepicker.min.js"></script>-->
+<script>
+	
+    $(document).ready(function(){
+        $('.myPopover').popover();
+    });
+
+    $('#calendar').datepicker({
+		inline: true,
+		firstDay: 1,
+		showOtherMonths: true,
+		dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
+	});
+    
+   $("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
+   });
+    
+    (function () {
+	   var date = new Date(),
+	   weekday = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+
+	   document.getElementById('day').innerHTML = weekday[date.getDay()];
+	   document.getElementById('number').innerHTML = date.getDate();
+    }) ();
+    
+</script>     
+    </body>   
+</html>
+
